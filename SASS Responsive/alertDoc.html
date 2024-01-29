@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS Documentation: Alerts</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>Alerts</h1>
+        <a href="index.html">Back to Home Page</a>
+        <h3>Usage</h3>
+        <p>
+            Alerts are used to signify an important event or something similar to the user. They display text and have preset colors for various
+            scenarios.
+        </p>
+        <h3>Code</h3>
+        <p>
+            To create an alert, use the '<code>.alert_[option]</code>' class. The various options for alerts include:
+        </p>
+        <ul>
+            <li>success</li>
+            <li>warning</li>
+            <li>danger</li>
+            <li>informative</li>
+            <li>monochrome</li>
+        </ul>
+        <p>
+            If you want to add a close button, add a div with a <code>alert_close</code> class
+        </p>
+        <h3>Examples</h3>
+        <p>
+            &lt;div class="alert_success"&gt;<br>
+            &emsp;&lt;p&gt;Awesome! This is a success alert!&lt;/p&gt;<br>
+            &lt;div&gt;
+        </p>
+        <div class="alert_success">
+            <p>Awesome! This is a success alert!</p>
+        </div>
+        <br/>
+        <p>
+            &lt;div class="alert_warning"&gt;<br>
+            &emsp;&lt;p&gt;Be careful. This is a warning alert!&lt;/p&gt;<br>
+            &lt;div&gt;
+        </p>
+        <div class="alert_warning">
+            <p>Be careful. This is a warning alert!</p>
+        </div>
+        <br/>
+        <p>
+            &lt;div class="alert_danger"&gt;<br>
+            &emsp;&lt;p&gt;Watch out! This is a danger alert!&lt;/p&gt;<br>
+            &lt;div&gt;
+        </p>
+        <div class="alert_danger">
+            <p>Watch out! This is a danger alert!</p>
+        </div>
+        <br/>
+        <p>
+            &lt;div class="alert_informative"&gt;<br>
+            &emsp;&lt;p&gt;You should know... This is an informative alert!&lt;/p&gt;<br>
+            &lt;div&gt;
+        </p>
+        <div class="alert_informative">
+            <p>You should know... This is an informative alert!</p>
+        </div>
+        <br/>
+        <p>
+            &lt;div class="alert_monochrome"&gt;<br>
+            &emsp;&lt;p&gt;Hey. This is a monochrome alert!&lt;/p&gt;<br>
+            &lt;div&gt;
+        </p>
+        <div class="alert_monochrome">
+            <p>Hey. This is a monochrome alert.</p>
+        </div>
+        <br/>
+        <p>
+            &lt;div class="alert_monochrome"&gt;<br>
+            &emsp;&lt;p&gt;This is a closeable alert.&lt;/p&gt;<br>
+            &lt;div&gt;
+        </p>
+        <div class="alert_monochrome">
+            <p>This is a closeable alert.</p>
+            <div class="alert_close">&times;</div>
+        </div>
+    </div>
+    <script src="scripts/alertClose.js"></script>
+</body>
+</html>

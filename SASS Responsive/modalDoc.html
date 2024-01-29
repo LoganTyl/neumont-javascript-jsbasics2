@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS Documentation: Modals</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>Modals</h1>
+        <a href="index.html">Back to Home Page</a>
+        <h3>Usage</h3>
+        <p>
+            Modals are pop up windows that appear on top of the current page to display information.
+        </p>
+        <h3>Code</h3>
+        <p>
+            To create a modal, create a div with the <code>.mdl</code> class. Within it, create another div with the 
+            <code>mdl_content</code> class. To close it, create a button within the <code>mdl_content</code> class with a 
+            class of <code>mdl_close</code> **Note: The parent class of the close button MUST be the <code>mdl_content</code> div. 
+            To make it appear, give a button the <code>mdl_open</code> class.
+        </p>s
+        <h3>Examples</h3>
+        <p>
+            &lt;button class="mdl_open"&gt;Open the Modal&lt;/button&gt;<br><br>
+            &lt;div class="mdl"&gt;<br>
+            &emsp;&lt;div class="mdl_content"&gt;<br>
+            &emsp;&emsp;&lt;p&gt;This is a modal.&lt;/p&gt;<br>
+            &emsp;&emsp;&lt;button class="mdl_close"&gt;Close the Modal&lt;/button&gt;<br>
+            &emsp;&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+        </p>
+        <button class="mdl_open">Open the Modal</button>
+
+        <div class="mdl">
+            <div class="mdl_content">
+                <p>This is a modal.</p>
+                <button class="mdl_close">Close the Modal</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/modal.js"></script>
+</body>
+</html>

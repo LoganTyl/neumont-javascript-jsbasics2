@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS Documentation: Slideshows</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>Slideshows</h1>
+        <a href="index.html">Back to Home Page</a>
+        <h3>Usage</h3>
+        <p>
+            Slideshows are used to display a number of images switching between each other.
+        </p>
+        <h3>Code</h3>
+        <p>
+            Slideshows are made with a div with the <code>.slideshow-wrapper</code> class. Inside it, for each image, put a 
+            div with the <code>.slideshow-img</code>. Inside that, put the image you want.<br>
+            For left/right arrows, put a tags with <code>slideshow-prev</code> and <code>slideshow-next</code> classes, respectfully, 
+            within the <code>.slideshow-wrapper</code> class.
+
+        </p>
+        <h3>Examples</h3>
+        <p>
+            &lt;div class="slideshow-wrapper"&gt;<br>
+            &emsp;&lt;div class="slideshow-img"&gt;<br>
+            &emsp;&emsp;&lt;img src="images/flowers.png"&gt;<br>
+            &emsp;&lt;/div&gt;<br>
+            &emsp;&lt;div class="slideshow-img"&gt;<br>
+            &emsp;&emsp;&lt;img src="images/carmen.png"&gt;<br>
+            &emsp;&lt;/div&gt;<br>
+            &emsp;&lt;div class="slideshow-img"&gt;<br>
+            &emsp;&emsp; &lt;img src="images/flatfriday.png"&gt;<br>
+            &emsp;&lt;/div&gt;<br>
+                <br>
+            &emsp;&lt;a class="slideshow-prev"&gt;&NestedLessLess;&lt;/a&gt;<br>
+            &emsp;&lt;a class="slideshow-next"&gt;&NestedGreaterGreater;&lt;/a&gt;<br>
+            &lt;/div&gt;<br>
+        </p>
+        <div class="slideshow-wrapper">
+            <div class="slideshow-img">
+                <img src="images/flowers.png">
+            </div>
+            <div class="slideshow-img">
+                <img src="images/carmen.png">
+            </div>
+            <div class="slideshow-img">
+                <img src="images/flatfriday.png">
+            </div>
+
+            <a class="slideshow-prev">&NestedLessLess;</a>
+            <a class="slideshow-next">&NestedGreaterGreater;</a>
+        </div>
+    </div>
+    <script src="scripts/slideshow.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS Documentation: Tooltips</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>Tooltips</h1>
+        <a href="index.html">Back to Home Page</a>
+        <h3>Usage</h3>
+        <p>
+            Tooltips are used to display information to the user when an element is hovered over.
+        </p>
+        <h3>Code</h3>
+        <p>
+            To create a tooltip, give a div the <code>.tooltip</code> class. Within it, put a span with a <code>.toolTipContent</code> class.
+        </p>
+        <h3>Examples</h3>
+        <p>
+            &lt;div class="tooltip"&gt;<br>
+            &emsp;&lt;p&gt;Hover Over This&lt;/p&gt;<br>
+            &emsp;&lt;span class="tooltipContent"&gt;This is some cool tooltip text&lt;/span&gt;<br>
+            &lt;/div&gt;<br>
+        </p>
+        <div class="tooltip">
+            <p>Hover Over This</p>
+            <span class="tooltipContent">This is some cool tooltip text</span>
+        </div>
+    </div>
+    <script src="scripts/tooltip.js"></script>
+</body>
+</html>

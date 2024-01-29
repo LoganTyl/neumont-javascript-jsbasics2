@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS Documentation: Nav Bars</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>Navigation Bars</h1>
+        <a href="index.html">Back to Home Page</a>
+        <h3>Usage</h3>
+        <p>
+            Navigation bars are elements - typically used in the header - that contain links to other pages of a website.
+        </p>
+        <h3>Code</h3>
+        <p>
+            Navigation bars are made using the &lt;nav&gt; tag with the <code>.navbar</code> class. Within it, use the &lt;ul&gt; tag
+            with the class of <code>.navbar_link_list</code>. For each item in the list, use the <code>.navbar_list_item</code> class.
+            If you want to add a dropdown element, add a div with the <code>.dropdown</code> class. Inside of that, add a button with 
+            the <code>.dropButton</code> class. Beneath that, put a div with the <code>.dropList</code> class. Within that, add the 
+            desired links.
+        </p>
+        <h3>Examples</h3>
+        <p>
+            &lt;nav class="navbar"&gt;<br>
+            &emsp;&lt;ul class="navbar_link_list"&gt;<br>
+            &emsp;&emsp;&lt;li class="navbar_list_item"&gt;<br>
+            &emsp;&emsp;&emsp;&lt;a href="navBarDoc.html"&gt;List Item 1&lt;/a&gt;<br>
+            &emsp;&emsp;&lt;/li&gt;<br>
+            &emsp;&emsp;&lt;li class="navbar_list_item"&gt<br>;
+            &emsp;&emsp;&emsp;&lt;a href="navBarDoc.html"&gt;List Item 2&lt;/a&gt;<br>
+            &emsp;&emsp;&lt;/li&gt;<br>
+            &emsp;&emsp;&lt;li class="navbar_list_item dropdown"&gt;<br>
+            &emsp;&emsp;&emsp;&lt;div class="dropdown"&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;button class="dropButton"&gt;Dropdown&darr;&lt;/button&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;div class="dropList"&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;a href="navBarDoc.html"&gt;Dropdown Item #1&lt;/a&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;a href="navBarDoc.html"&gt;Dropdown Item #2&lt;/a&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;a href="navBarDoc.html"&gt;Dropdown Item #3&lt;/a&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;/div&gt;<br>
+            &emsp;&emsp;&emsp;&lt;/div&gt;<br>
+            &emsp;&emsp;&lt;/li&gt;<br>
+            &emsp;&lt;/ul&gt;<br>
+            &lt;/nav&gt;
+        </p>
+        <br>
+        <nav class="navbar">
+            <ul class="navbar_link_list">
+                <li class="navbar_list_item">
+                    <a href="navBarDoc.html">List Item 1</a>
+                </li>
+                <li class="navbar_list_item">
+                    <a href="navBarDoc.html">List Item 2</a>
+                </li>
+                <li class="navbar_list_item dropdown">
+                    <div class="dropdown">
+                        <button class="dropButton">Dropdown&darr;</button>
+                        <div class="dropList">
+                            <a href="navBarDoc.html">Dropdown Item #1</a>
+                            <a href="navBarDoc.html">Dropdown Item #2</a>
+                            <a href="navBarDoc.html">Dropdown Item #3</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script src="scripts/dropdown.js"></script>
+</body>
+</html>

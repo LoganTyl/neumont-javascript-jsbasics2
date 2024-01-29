@@ -1,0 +1,158 @@
+body{
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+em{
+    font-style: italic;
+}
+
+strong{
+    font-weight: bold;
+}
+
+code{
+    font-family: monospace;
+}
+
+samp{
+    font-family: monospace;
+    background-color: lighten(black, 25%);
+    color: white;
+}
+
+kbd{
+    font-family: monospace;
+}
+
+var{
+    font-style: italic;
+}
+
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+li{
+    padding: {
+        top: 5px;
+        bottom: 5px;
+    }
+}
+
+img{
+    margin:5px;
+}
+
+@for $heading from 1 to 6 {
+    h#{$heading} {
+        margin: {
+            bottom: 1em;
+            top:0.5em;
+        }
+    }
+}
+
+@mixin alert-frame{
+    margin: 20px;
+    padding: {
+        top: 10px;
+        bottom: 10px;
+        left: 5px;
+    }
+    width: 30%;
+}
+
+.alert_success, .alert_warning, .alert_danger, .alert_informative, .alert_monochrome{
+    @include alert-frame;
+}
+
+.img_circular{
+    border-radius: 50%;
+}
+
+.img_resp{
+    max-width: 100%;
+    height: auto;
+}
+
+@mixin btn-frame{
+    margin: 10px;
+    padding: 3px;
+    width: auto;
+}
+
+.btn_success, .btn_warning, .btn_danger, .btn_informative, .btn_monochrome{
+    @include btn-frame;
+}
+
+.list_gpd{
+    margin: 10px;
+    width: 25%;
+}
+
+.list_gpd_item{
+    border: 1px black solid;
+    padding: {
+        top: 5px;
+        bottom: 5px;
+        left: 3px;
+    }
+}
+
+.navbar{
+    margin-bottom: 20px;
+    border: 2px darken(#A38AD8, 10%) solid;
+    background-color: #A38AD8;
+    overflow: hidden;
+}
+
+.navbar_link_list{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    float: left;
+
+}
+
+.navbar_list_item{
+    padding: {
+        left: 5px;
+        right: 5px;
+    }
+    text: {
+        decoration: none;
+    }
+}
+
+.dropList {
+    display: none;
+    position: absolute;
+    background-color: lighten(#A38AD8, 10%);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    a{
+        padding: 5px;
+    }
+}
+
+.dropdown .dropButton {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    margin: 0;
+  }
+
+.dropdown:hover .dropList {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

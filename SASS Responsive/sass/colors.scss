@@ -1,0 +1,32 @@
+$color1: #A38AD8;
+$color2: #8AD8A3;
+$color3: #D8A38A;
+
+.active{
+    background-color: darken($color1, 7%);
+
+}
+
+body{
+    background-color: lighten($color3, 10%);
+}
+
+.alert_success, .btn_success{
+    background-color: darken($color2, 20%);
+}
+
+.alert_warning, .btn_warning{
+    background-color: darken($color3, 5%);
+}
+
+.alert_danger, .btn_danger{
+    background-color: lighten(firebrick, 5%);
+}
+
+.alert_informative, .btn_informative{
+    background-color: darken($color1, 5%);
+}
+
+.alert_monochrome, .btn_monochrome{
+    background-color: lighten(black, 40%);
+}
