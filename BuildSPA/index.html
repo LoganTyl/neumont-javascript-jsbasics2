@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Make Some Brownies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.min.js"></script>
+</head>
+<body ng-app="mainApp">
+    <div class="wrapper">
+        <div id="sideNavDiv" class="wrapperChild">
+            <ul id="sideNav" ng-controller="sideNavController">
+                <div id="hamburgIcon" ng-click="open=true">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="closeIcon" ng-click="open=false">
+                    <div>&#10006;</div>
+                </div>
+                <li ng-repeat="page in sideNav">
+                    <a href="#!{{page.link}}" id="{{page.index}}" class="sideNavLink">{{page.title}}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapperChild" id="fillerDiv"></div>
+        <div class="wrapperChild">
+            <div ng-view></div>
+        </div>
+    </div>
+    <div id="buttonFooter" ng-controller="pageController">
+        <div id="previousBtn" class="btn" ng-class="start ? 'disabledBtn' : ''" ng-click="prevPage()">
+            Back
+        </div>
+        <div id="nextBtn" class="btn" ng-class="end ? 'disabledBtn' : ''" ng-click="nextPage()">
+            Next
+        </div>
+    </div>
+    <script src="angular-animate.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

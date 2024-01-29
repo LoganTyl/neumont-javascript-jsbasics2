@@ -1,0 +1,101 @@
+body{
+    background-color: #DDC766;
+    font-family: 'Zilla Slab', serif;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.wrapperChild{
+    flex: 1.6;
+}
+
+#fillerDiv{
+    flex: 0.2;
+}
+
+#sideNavDiv{
+    flex: 0.2;
+}
+
+#sideNav{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+#sideNav li {
+    padding: 20px 0;
+}
+
+#sideNav li a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+
+#sideNav li a:hover{
+    text-decoration: underline;
+}
+
+#sideNavDiv{
+    width: 10%;
+    background-color: #DDA544;
+    height: 600px;
+    text-align: center;
+    border-radius: 20px;
+    position: sticky;
+    top: 10px;
+}
+
+.btn{
+    background-color: #DD8344;
+    padding: 10px;
+    margin: 50px 100px;
+    font-size: larger;
+}
+
+.disabledBtn{
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+#buttonFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+}
+
+p{
+    text-align: center;
+}
+
+img{
+    margin: 20px auto;
+    display: block;
+}
+
+#hamburgIcon{
+    display: block;
+    cursor: pointer;
+}
+
+#hamburgIcon div{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px auto;
+    display: none;
+    border-radius: 5px;
+}
+
+#closeIcon{
+    display: block;
+    cursor: pointer;
+}

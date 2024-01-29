@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="floating_labels.css">
+    <title>AlienWare</title>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+    <nav id="topNav" class="navbar navbar-expand-lg navbar-dark"> <!--navbar-->
+        <a class="navbar-brand" href="#">
+            <img src="images/alienware_dark.png" id="headerLogo"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Current Spotlight</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#spotlight">Product</a>
+                      <a class="dropdown-item" href="#features">Features</a>
+                      <a class="dropdown-item" href="#reviews">Reviews</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#deals">Current Deals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#statement">Our Statement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#email_subscription">Email Subscription</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id='topCarousel' class="carousel slide carousel-fade" data-ride="carousel"> <!--carousel - pics are 1100w x 450h-->
+        <ul class="carousel-indicators">
+            <li data-target="#topCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#topCarousel" data-slide-to="1"></li>
+            <li data-target="#topCarousel" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class='carousel-item active'>
+                <img src="images/holographic_projector.png" class="d-block w-100" alt="Projector"/>
+            </div>
+            <div class='carousel-item'>
+                <img src="images/computer.png" class="d-block w-100" alt="Laptop"/>
+            </div>
+            <div class='carousel-item'>
+                <img src="images/cpu_tower.png" class="d-block w-100" alt="Computer Tower"/>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#topCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#topCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid" id="spotlight">
+        <div class="container">
+            <h1>Alienware's Spotlight</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <h3 id="product">The Product</h3>
+        <div class="container">
+            <img src="images/holographic_projector2.png" id="spotlightImage" alt="Projector" class='rounded-circle mx-auto d-block img-fluid'/>
+            <p>This is the newest holographic projector hot off the production line. Praesent ac erat sollicitudin, 
+                ultricies neque in, vulputate ligula. Aenean mollis sollicitudin lectus. Nulla ac commodo purus, et porttitor nisl. 
+                Suspendisse laoreet enim libero, in lobortis metus bibendum eget. Integer malesuada luctus mauris, at luctus eros. 
+                Donec luctus magna nulla, ut bibendum tellus aliquam a. Quisque non diam nisi. Curabitur nisi arcu, luctus sit amet augue vel, 
+                ornare sollicitudin erat.</p>
+        </div>
+        <h3 id="features">The Features</h3>
+            <div class="container">
+                <ul>
+                    <li id="featureList">Nulla et sem quam. Nulla efficitur a odio a interdum. Praesent iaculis, eros pellentesque porttitor commodo, dolor metus hendrerit sem.</li>
+                    <li id="featureList">Nullam egestas nibh auctor dui varius, et hendrerit quam dapibus. Maecenas et iaculis dolor. Aenean vitae justo venenatis, mattis neque.</li>
+                    <li id="featureList">Maecenas volutpat dignissim ex, ac maximus mi vehicula eget. Sed eu mollis metus. Suspendisse pharetra orci venenatis, maximus nisl et.</li>
+                    <li id="featureList">Nunc malesuada nibh et arcu lobortis sollicitudin. Donec pellentesque luctus magna, nec dictum enim tempus id. Suspendisse et felis placerat.</li>
+                    <li id="featureList">Donec non congue sem, a tincidunt mauris. Vestibulum in magna ex. Donec at pharetra neque. Nulla facilisi. Sed leo ligula.</li>
+                    <li id="featureList">...and so much more!</li>
+                </ul>
+            </div>
+        <h3 id="reviews">The Reviews</h3>
+            <div class="container">
+                <div class="media border p-3">
+                    <img src="images/bill_gates.jpg" alt="Bill Gates" class="mr-3 mt-3 rounded-circle" style="width:60px; height:60px">
+                    <div class="media-body">
+                        <h4>Bill Gates   <span class="badge badge-secondary">Co-Founder of Microsoft</span></h4>
+                        <p>Pellentesque fringilla quis erat vel ullamcorper. Donec a sagittis velit. In luctus tempus risus ac convallis. Pellentesque ultricies lorem sem, ac sodales velit suscipit et.</p>      
+                    </div>
+                </div>
+                <div class="media border p-3">
+                    <img src="images/emmett_shear.jpg" alt="Emmett Shear" class="mr-3 mt-3 rounded-circle" style="width:60px; height:60px">
+                    <div class="media-body">
+                        <h4>Emmett Shear   <span class="badge badge-secondary">CEO of Twitch</span></h4>
+                        <p>In sem turpis, posuere et sapien in, interdum aliquet lectus. Cras posuere enim nibh, ac lacinia turpis scelerisque a. Cras egestas a justo vitae consequat. Donec magna mi, sodales ut rutrum at, ultrices non eros.</p>      
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid" id="deals">
+        <div class="container">
+            <h1>Current Deals</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4" id="centerColumn">
+                <div class="card">
+                    <img class="card-img-top rounded-lg" id="card1Image" src="images/aw_monitor.jpg" alt="Alienware Monitor">
+                    <div class="card-body">
+                        <button type="button" id="cardBtn" class="btn" data-toggle="collapse" data-target="#card1Info">Information</button>
+                            <div id="card1Info" class="collapse">
+                                <p>Price: $99.99</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et metus 
+                                    elementum, vehicula lorem sed, egestas sapien. Curabitur feugiat nulla 
+                                    in lorem congue, vel consectetur purus dignissim. Integer dolor nisi, 
+                                    faucibus nec malesuada in, tempus nec ex. Fusce ultrices magna ut dui 
+                                    fringilla porttitor. Quisque sollicitudin ultricies arcu, eget porta ligula 
+                                    blandit et.
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4" id="centerColumn">
+                <div class="card">
+                    <img class="card-img-top rounded-lg" id="card2Image" src="images/aw_mouse.png" alt="Alienware Monitor">
+                    <div class="card-body">
+                        <button type="button" id="cardBtn" class="btn" data-toggle="collapse" data-target="#card2Info">Information</button>
+                            <div id="card2Info" class="collapse">
+                                <p>Price: $7.99</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et metus 
+                                    elementum, vehicula lorem sed, egestas sapien. Curabitur feugiat nulla 
+                                    in lorem congue, vel consectetur purus dignissim. Integer dolor nisi, 
+                                    faucibus nec malesuada in, tempus nec ex. Fusce ultrices magna ut dui 
+                                    fringilla porttitor. Quisque sollicitudin ultricies arcu, eget porta ligula 
+                                    blandit et.
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4" id="centerColumn">
+                <div class="card">
+                    <img class="card-img-top rounded-lg" id="card3Image" src="images/aw_keyboard.png" alt="Alienware Monitor">
+                    <div class="card-body">
+                        <button type="button" id="cardBtn" class="btn" data-toggle="collapse" data-target="#card3Info">Information</button>
+                            <div id="card3Info" class="collapse">
+                                <p>Price: $89.99</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et metus 
+                                    elementum, vehicula lorem sed, egestas sapien. Curabitur feugiat nulla 
+                                    in lorem congue, vel consectetur purus dignissim. Integer dolor nisi, 
+                                    faucibus nec malesuada in, tempus nec ex. Fusce ultrices magna ut dui 
+                                    fringilla porttitor. Quisque sollicitudin ultricies arcu, eget porta ligula 
+                                    blandit et.
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid" id="statement">
+        <div class="container">
+            <h1>Our Statement</h1>
+        </div>
+    </div>
+    <div class='container-fluid'>
+        <div class="container">
+            <div class="alert">
+                <p>"Alienware will <i>strive</i> to become the pinnacle of hardware development for people everywhere!"</p>
+            </div>
+        </div>
+        <p>&emsp;This is what our founder believed in, and we at Alienware continue to believe in this statement. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a vehicula mauris. Ut rhoncus vehicula scelerisque. Etiam sagittis dapibus ex. Nunc fringilla suscipit luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta purus ut scelerisque vestibulum. Vestibulum ultrices pretium nulla, sed malesuada urna ultricies eu. Morbi orci nibh, maximus vitae fermentum id, pulvinar ut erat. Nunc lorem ligula, iaculis vel justo sed, sodales elementum nisl. Aliquam sed erat tempor, finibus libero sed, consequat purus. Nunc id nibh a nibh faucibus rutrum sit amet in turpis.</p>
+        <p>&emsp;Sed faucibus nibh eget mauris sagittis malesuada. Curabitur at dolor et libero fermentum commodo. Aenean non leo in purus ullamcorper consequat sed a neque. Aenean sollicitudin molestie augue. Curabitur dictum enim quis orci suscipit, nec ultrices mauris accumsan. Sed ultricies purus gravida, hendrerit lorem quis, pretium elit. Donec accumsan nulla et nisl tempus hendrerit. Phasellus massa nisl, efficitur eu nibh sed, lacinia lobortis orci. Nulla non dolor eget dolor ultricies placerat sit amet a lectus. Pellentesque iaculis cursus auctor. Aenean egestas aliquam nisl, ac sollicitudin diam facilisis ac. In urna ligula, blandit vel semper non, sollicitudin sit amet odio. Donec at sem et ligula scelerisque dignissim eget sed libero. Quisque luctus massa non augue suscipit ullamcorper eget sit amet dolor. Duis dapibus, eros ut dictum faucibus, magna purus iaculis lorem, in hendrerit dolor neque in erat.</p>
+        <p>&emsp;In sollicitudin varius ligula ac lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor ante quam, at tempus purus aliquet quis. Nunc ut vehicula odio. Morbi ligula urna, commodo sed mollis quis, vehicula quis metus. Quisque ut dui vitae dui pretium blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc pulvinar tristique imperdiet. Donec sollicitudin ullamcorper gravida. Donec feugiat fermentum justo, sed vehicula leo. Maecenas odio enim, aliquam at velit at, dignissim tincidunt nisl. Maecenas vitae suscipit justo, non consequat diam. Pellentesque mattis ornare enim vitae lacinia. Cras non ante est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <br/>
+        <img id="aw_logo" src="images/aw_logo.png" alt="AlienWare Logo" class="mx-auto d-block">
+    </div>
+
+    <div class="container-fluid" id="email_subscription"> <!--Email Sign Up-->
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6">
+                <h5>
+                    Sign Up For the Latest News
+                </h5>
+                <div class="input-group mb-3 justify-content-center" id="inputEmail">
+                    <div class="form-label-group">
+                        <input type="text" id="inputUsername" class="form-control" placeholder="User Name" data-toggle="tooltip" data-placement="bottom" title="Ex: johnsmith">
+                        <label for="inputUsername">User Name</label>
+                    </div>
+                    <div class="input-group-append">
+                        <span class="input-group-text">@</span>
+                    </div>
+                    <div class="form-label-group">
+                        <input type="text" id="inputDomain" class="form-control" placeholder="Domain Name" data-toggle="tooltip" data-placement="bottom" title="Ex: gmail.com">
+                        <label for="inputDomain">Domain Name</label>
+                    </div>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="promo_emails" checked="true">
+                    <label class="custom-control-label" for="promo_emails">I want to receive promotional emails on new products.</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="deal_emails" checked="true">
+                    <label class="custom-control-label" for="deal_emails">I want to receive emails on great deals.</label>
+                </div>
+                <input type="submit" id="footerSubmit" class="btn btn-outline-light" value="Sign Up" data-toggle="modal" data-target="#emailModal">
+                <div class="modal fade" id="emailModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Email WIP</h3>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                Our email service is currently down. Our repair team is working hard to fix the issue. We apologize for the inconvenience.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-lg-3">
+                <h5>Come See What We're Up To</h5>
+                <div id="instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>
+                        <a href="https://www.instagram.com/alienware/?hl=en" id="footerLink"><strong>Instagram</strong></a>
+                    </span>
+                </div>
+                <div id="twitter">
+                    <i class="fab fa-twitch"></i>
+                    <span>
+                        <a href="https://www.twitch.tv/alienware" id="footerLink"><strong>Twitch</strong></a>
+                    </span>
+                </div>
+                <div id="facebook">
+                    <i class="fab fa-facebook"></i>
+                    <span>
+                        <a href="https://www.facebook.com/" id="footerLink"><strong>Facebook</strong></a>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/55a43dca42.js" crossorigin="anonymous"></script>
+    <script src="backend.js"></script>
+</body>
+</html>

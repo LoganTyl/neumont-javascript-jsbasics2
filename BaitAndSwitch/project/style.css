@@ -1,0 +1,204 @@
+body {
+    font-family: "Kristen ITC", Arial;
+    background-color: #295f8e;
+}
+
+.box {
+    border: 1px solid #000;
+    flex: 1;
+}
+
+#siteContent {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    align-content: center;
+    justify-content: space-around;
+    align-self: center;
+    margin: auto;
+    background-color: #ccbf85;
+}
+
+#header,#footer,#header2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#picture-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+#belowSlogan {
+    display: flex;
+    flex-direction: row;
+}
+
+#menuItems {
+    display: flex;
+    flex-direction: row;
+}
+
+#subtitleSection{
+    text-align: center;
+}
+
+#aboutDescription {
+    column-count: 3;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+#menu{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+table {
+    border: 2px solid #930200;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 5px;
+    margin-top: 40px;
+}
+
+td{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th, #subtitleSection, #slogan{
+    color: #930200;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#footer{
+    margin-left: -30px;
+}
+
+#fishPic {
+    margin-top: 30px;
+    min-width: 495px;
+    max-width: 495px;
+    min-height: 306px;
+    max-height: 306px;
+    display: flex;
+    justify-content: flex-end;
+    vertical-align: bottom;
+}
+
+#leftOfFish{
+    overflow: hidden;
+}
+
+#slogan{
+    display: flex;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#sloganLine{
+    flex:1;
+    text-align: center;
+}
+
+#headerMiddle{
+    background-image: url("editedImages/MiddleHeaderCut.png");
+    background-repeat: repeat-x;
+    display: flex;
+    flex: 12;
+}
+
+#footerMiddle{
+    background-image: url("editedImages/MiddleFooter.png");
+    background-repeat: repeat-x;
+    display: flex;
+    flex: 12;
+}
+
+#headerText{
+    color:white;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headerLeft{
+    margin-left: -20px;
+}
+
+#headerRight{
+    margin-right: -20px;
+}
+
+#footerLeft, #footerMiddle, #footerRight{
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+#footerLeft{
+    margin-left: 10px;
+}
+
+#footerRight{
+    margin-right: -15px;
+}
+
+@media all and (max-width: 1350px){
+    #leftOfFish{
+        display: none;
+    }
+
+    #siteContent{
+        width: 70%
+    }
+}
+
+@media all and (max-width: 1150px){
+    #siteContent{
+        width: 80%
+    }
+
+    #headerText{
+        font-size: larger;
+    }
+}
+
+@media all and (max-width: 950px){
+    #headerLeft, #headerRight, #footerLeft, #footerRight{
+        display: none;
+    }
+
+    #siteContent{
+        width: 100%
+    }
+}
+
+@media all and (max-width: 800px){
+    #belowSlogan{
+        flex-direction: column;
+    }
+
+    #aboutDescription{
+        column-count: 1;
+    }
+}
+
+@media all and (max-width: 600px){
+    #headerText{
+        font-size: medium;
+    }
+
+    #slogan{
+        display: none;
+    }
+
+    #fishPic{
+        transform: scale(0.85);
+    }
+}

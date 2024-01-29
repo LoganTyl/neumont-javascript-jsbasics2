@@ -1,0 +1,112 @@
+body{
+    font-family: 'Open Sans Regular', "Open Sans";
+}
+
+#topNav{
+    background-color: #222222;
+}
+
+#headerLogo{
+    width: 237px;
+    height: 75px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23222' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23222' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.nav-link{
+    font-family: "Open Sans SemiBold";
+}
+
+.jumbotron{
+    font-family: "Bebas Neue";
+    margin-top: 20px;
+    text-align: center;
+    background-color: #222222;
+    color: white;
+}
+
+.card-body{
+    background-color: #222222;
+    color: white;
+}
+
+#cardBtn{
+    background-color: #49c0b6;
+}
+
+.input-group-append{
+    height: 50px;
+}
+
+.modal-content{
+    color: #222222;
+}
+
+#email_subscription{
+    background-color: #222222;
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+#footerLink{
+    color: #007cc0;
+}
+
+#centerColumn{
+    text-align: center;
+}
+
+#card1Image, #card2Image, #card3Image{
+    padding-top: 10px;
+    background-color: #222222;
+}
+
+.alert{
+    background-color: #ffc20e;
+    text-align: center;
+}
+
+#product, #features, #reviews{
+    text-align: center;
+    font-family: "Bebas Neue Regular";
+}
+
+#spotlightImage{
+    padding-bottom: 20px;
+}
+
+.media{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.badge{
+    background-color: #222222;
+}
+
+#featureList{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#aw_logo{
+    padding-bottom: 30px;
+}
+
+h1{
+    font-family: "Avenir Next LT Pro Demi", "Avenir Next LT Pro";
+}
+
+@media all and (max-width: 991px){
+    #footerSubmit{
+        margin-bottom: 20px;
+    }
+}
